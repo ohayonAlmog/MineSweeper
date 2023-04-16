@@ -1,0 +1,174 @@
+.body{
+    text-align: center;
+    background-image: url("../img/mineimg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+table, tr, td{
+    width: var(--table-width);
+    margin: auto;
+    height: 50px;
+    border-style: none;
+    border-radius: 10px;
+    border-color: rgb(168, 157, 8);
+    text-align: center;
+    background-color: rgb(216, 215, 156);
+    margin-bottom: 30px;
+}
+
+/*td{
+    width: 45px;
+    height: 45px;
+    border-style: solid;
+}*/
+
+.occupied{
+    width: 45px;
+    height: 45px;
+    border-style: solid;
+    pointer-events: auto;
+}
+
+.btn{
+    background-color: rgb(168, 157, 8);
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 70px;
+    width: 50px;
+    font-size: 35px;
+
+}
+
+button:hover {
+    background-color: rgb(216, 215, 156);
+}
+
+.divy{
+    text-align: center;
+    border-radius: 20px;
+    width: calc(400px + var(--table-width) / 2);
+    margin: auto;
+    margin-top: 60px;
+    border-style: solid;
+    background-color: rgb(216, 215, 156);
+    border-color: rgb(102, 102, 105);
+}
+
+.levelBtn{
+    border-radius: 20px;
+    margin-bottom: 40px;
+    font-family: 'Copperplate';
+}
+
+.levelBtn:hover{
+    box-shadow: 9px 14px 24px 4px rgb(102, 102, 105);
+}
+
+.btn1{
+        background-color:rgb(37, 138, 37)
+
+}
+
+.btn2{
+    background-color: rgb(168, 103, 5);
+}
+
+.btn3{
+    background-color: rgb(150, 48, 48);
+}
+
+h1{
+    margin-bottom: 40px;
+    margin: auto;
+    background-color: rgb(168, 157, 8);
+    border-style: solid;
+    border-color:rgb(102, 102, 105);
+    border-radius: 70px;
+}
+
+h2{
+    background-color: rgb(168, 157, 8);
+    border-style: solid;
+    border-color:rgb(102, 102, 105);
+    border-radius: 70px;
+}
+
+.gameData{
+    overflow: hidden;
+    display: inline-block;
+}
+
+h3{
+    color: brown;
+}
+
+h4{
+    overflow: hidden;
+    padding-left: 300px;
+}
+
+.hints{
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+    margin-top: 20px;
+}
+
+.hints:hover {
+    background-color: rgb(143, 143, 146);
+}
+
+.modal{
+    text-align: center;
+    margin: auto;
+    display: none;
+    background-color: rgb(143, 143, 146);
+    width: 300px;
+    padding: 20px;
+    border: 5px solid rgb(82, 79, 79);
+}
+
+.restart{
+    background-color: rgb(143, 143, 146);
+    width: 100px;
+    margin: auto;
+}
+
+.restart:hover{
+    transition: .4s;
+    width: 300px;
+}
+
+.time{
+    height: 30px;
+    text-align: center;
+}
+
+.extras{
+    font: italic small-caps bold 16px/2 cursive;
+    border-radius: 20px;
+}
+
+.dark{
+    background-color: #fff;
+}
+
+.mega{
+    pointer-events: auto;
+    background-color: rgb(123, 145, 218);  
+}
+
+.exterminator{
+    background-color: rgb(216, 124, 124);
+}
+
+.safeClick{
+    background-color: rgb(120, 199, 130);
+}
+
+:root{
+    --table-width: 200px;
+}
+

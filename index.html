@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Mine Sweeper</title>
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+    <body class="body" onload="onInit()" oncontextmenu="return false;">
+
+        
+
+        <div>
+
+            <div class="divy">
+
+                <button class="restart" onClick="onRestart()" onmousemove="movingMouse()" onmouseleave="mouseReleased()">😁</button>
+
+                <h1>Mine Sweeper</h1>
+
+                <button class="hints hint1" onclick="hint('1')">💡</button>
+                <button class="hints hint2" onclick="hint('2')">💡</button>
+                <button class="hints hint3" onclick="hint('3')">💡</button>
+
+                <h2 class="time"></h2>
+
+                <h3 class="gameData life">❤❤❤</h3> 
+                <h4 class="gameData flag">2 🚩</h4>
+
+                <table>
+                    <tbody class="board"></tbody>
+                </table>
+            
+                <button class="levelBtn btn1" onclick="changeLevel('easy')">Beginner</button>
+                <button class="levelBtn btn2" onclick="changeLevel('medium')">Medium</button>
+                <button class="levelBtn btn3" onclick="changeLevel('hard')">Expert</button>
+    
+            </div>
+                
+            
+
+        </div>
+
+        <button class="extras dark" onclick="darkMode()">Dark Mode</button>
+        <button class="extras mega" onclick="markMegaHint()">Mega Hint</button>
+        <button class="extras exterminator" onclick="exterminator()">Exterminator</button>
+        <button class="extras safeClick" onclick="safeClick()">Safe Click</button>
+
+        <div class="modal">
+            <h5 class="userMsg">Hi</h5>
+        </div>
+
+    	<script src="js/main.js"></script>
+        <script src="js/game.js"></script>
+        <script src="js/util.js"></script>
+
+        <footer>
+            <p>Author: Almog Ohayon</p>
+        </footer>
+    </body>
+
+</html>
